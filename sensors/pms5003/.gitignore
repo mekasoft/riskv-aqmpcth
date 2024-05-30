@@ -1,0 +1,14 @@
+*.o
+
+*~
+*.swp
+*.swo
+*.bak
+*.rej
+.DS_Store
+
+tags
+.tags*
+cscope.*
+ncscope.*
+.svim
