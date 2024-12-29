@@ -186,7 +186,7 @@ void get_sensor_data(int fd) {
             co2f_data[0] = (data_high * 256 + data_low);
             printf("[MHZ19B] DATA %d: %d\n", 0, co2f_data[0]);
 
-            *mhz19b_mem_co2 = co2f_data[0]; //PM1.0 concentration unit μ g/m3（CF=1，standard particle
+            *mhz19b_mem_co2 = co2f_data[0]; 
 
             // checksum Check code=Start character 1+ Start character 2 +……..+ data 13   Low 8 bits 
             data_receive = wiringXSerialGetChar(fd);
